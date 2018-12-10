@@ -1,0 +1,16 @@
+[user]
+    name = Mirko Westermeier
+    email = mirko@westermeier.de
+    signingkey = 730E195D
+[core]
+    editor = vim
+[alias]
+    st = status --short --branch
+    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+    loog  = log --graph --all --pretty=format:'%C(red bold)%d%Creset %s %Cgreen(%cr) %Cblue<%an> %Cred%h'
+[push]
+    default = simple
+[diff]
+    algorithm = patience
+[gpg]
+    program = gpg
