@@ -1,0 +1,31 @@
+# Dotfiles handling
+
+Read the whole blog post: [Nicola Paolucci: The best way to store your dotfiles: A bare Git repository][blog]
+
+```bash
+$ git clone --bare https://github.com/memowe/dotfiles.git $HOME/.dotfiles.git
+```
+
+`.bashrc` file:
+
+```bash
+alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+```
+
+Show added files only:
+
+```bash
+$ dotfiles config --local status.showUntrackedFiles no
+```
+
+The `dotfiles` command works now exactly like git does:
+
+```bash
+$ dotfiles status
+$ dotfiles checkout work .tmux.conf
+$ dotfiles add .config/redshift.conf
+$ dotfiles commit -m 'Add redshift config'
+$ dotfiles push origin work
+```
+
+[blog]: https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
