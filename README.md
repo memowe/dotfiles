@@ -3,7 +3,8 @@
 Read the whole blog post: [Nicola Paolucci: The best way to store your dotfiles: A bare Git repository][blog]
 
 ```bash
-$ git clone --bare https://github.com/memowe/dotfiles.git $HOME/.dotfiles.git
+$ git clone --recurse-submodules -j8 --bare https://github.com/memowe/dotfiles.git $HOME/.dotfiles.git
+$ cd .vim && make && cd -
 ```
 
 `.bashrc` file:
