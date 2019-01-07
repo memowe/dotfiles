@@ -3,7 +3,7 @@ set main-view = \
     id:yes \
     date:relative-compact \
     author:full \
-    commit-title:graph=v2
+    commit-title:graph=v2,refs=true
 
 set tree-view = \
     line-number:no \
