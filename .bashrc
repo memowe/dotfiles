@@ -92,6 +92,17 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+# some tree aliases
+alias t2='tree -L 2'
+alias t3='tree -L 3'
+alias t4='tree -L 4'
+alias th2='tree -hL 2'
+alias th3='tree -hL 3'
+alias th4='tree -hL 4'
+alias ta2='tree -ahL 2'
+alias ta3='tree -ahL 3'
+alias ta4='tree -ahL 4'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
