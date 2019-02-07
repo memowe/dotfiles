@@ -10,7 +10,7 @@ $ cd .vim && make && cd -
 `.bashrc` file:
 
 ```bash
-alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+$ alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 ```
 
 Show added files only:
