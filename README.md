@@ -19,6 +19,12 @@ Show added files only:
 $ dotfiles config --local status.showUntrackedFiles no
 ```
 
+Sometimes, this needs to be done to make `dotfiles fetch --all` work as expected.
+
+```bash
+$ dotfiles config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+```
+
 The `dotfiles` command works now exactly like git does:
 
 ```bash
