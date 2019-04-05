@@ -146,3 +146,6 @@ stty -ixoff
 export PATH=${HOME}/.cabal/bin:$PATH
 
 [ -f "/home/memowe/.ghcup/env" ] && source "/home/memowe/.ghcup/env" # ghcup-env
+
+# no proxy for local stuff
+export NO_PROXY=localhost,127.0.0.0/8,::1
