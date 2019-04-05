@@ -134,7 +134,7 @@ alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
 source ~/perl5/perlbrew/etc/bashrc
 
 # git completion
-#source $HOME/.git-completion.bash
+source $HOME/.git-completion.bash
 
 # disable terminal freeze
 stty stop ''
