@@ -144,3 +144,6 @@ stty -ixoff
 
 # cabal-installed utilities like pandoc
 export PATH=${HOME}/.cabal/bin:$PATH
+
+# no proxy for local stuff
+export NO_PROXY=localhost,127.0.0.0/8,::1
