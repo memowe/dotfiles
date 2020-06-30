@@ -4,13 +4,19 @@ Read the whole blog post: [Nicola Paolucci: The best way to store your dotfiles:
 
 ```bash
 $ git clone --recurse-submodules -j8 --bare https://github.com/memowe/dotfiles.git $HOME/.dotfiles.git
-$ cd .vim && make && cd -
 ```
 
 `.bashrc` file:
 
 ```bash
-$ alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
+```
+
+and
+
+```bash
+$ dotfiles submodule update --init --recursive
+$ cd .vim && make && cd -
 ```
 
 Show added files only:
