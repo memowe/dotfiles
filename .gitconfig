@@ -4,6 +4,8 @@
     signingkey = 730E195D
 [core]
     editor = vim
+[init]
+	defaultBranch = main
 [alias]
     st = status --short --branch
     lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
