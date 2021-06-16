@@ -141,3 +141,6 @@ stty stop ''
 stty start ''
 stty -ixon
 stty -ixoff
+
+# cabal-installed utilities like pandoc
+export PATH=${HOME}/.cabal/bin:$PATH
