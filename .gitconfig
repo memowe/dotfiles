@@ -1,7 +1,7 @@
 [user]
     name = Mirko Westermeier
     email = mirko@westermeier.de
-    signingkey = 730E195D
+    signingkey = BF62F357
 [core]
     editor = vim
 [init]
