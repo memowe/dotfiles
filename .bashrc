@@ -144,3 +144,5 @@ stty -ixoff
 
 # cabal-installed utilities like pandoc
 export PATH=${HOME}/.cabal/bin:$PATH
+
+[ -f "/home/memowe/.ghcup/env" ] && source "/home/memowe/.ghcup/env" # ghcup-env
