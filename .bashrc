@@ -130,6 +130,8 @@ fi
 # github.com/memowe/dotfiles
 alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 
+export EDITOR=vim
+
 # perl brew interpreter manager
 source ~/perl5/perlbrew/etc/bashrc
 
