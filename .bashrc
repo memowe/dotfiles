@@ -14,3 +14,5 @@ alias dotfiles='/usr/bin/env git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME
 
 # cabal-installed utilities like pandoc
 export PATH=${HOME}/.cabal/bin:$PATH
+
+[ -f "/home/mirkeau/.ghcup/env" ] && source "/home/mirkeau/.ghcup/env" # ghcup-env
