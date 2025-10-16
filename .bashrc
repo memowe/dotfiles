@@ -93,9 +93,6 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # some tree aliases
-alias t2='tree -L 2'
-alias t3='tree -L 3'
-alias t4='tree -L 4'
 alias th2='tree -hL 2'
 alias th3='tree -hL 3'
 alias th4='tree -hL 4'
