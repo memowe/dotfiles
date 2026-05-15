@@ -132,9 +132,6 @@ export EDITOR=vim
 # perl brew interpreter manager
 source ~/perl5/perlbrew/etc/bashrc
 
-# git completion
-source $HOME/.git-completion.bash
-
 # disable terminal freeze
 stty stop ''
 stty start ''
