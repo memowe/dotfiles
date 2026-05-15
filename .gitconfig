@@ -1,23 +1,34 @@
 [user]
     name = Mirko Westermeier
     email = mirko@westermeier.de
-    signingkey = BF62F357
+    signingkey = 2D1E1938B7DEF58BC4541A1CD8B4F6E3BF62F357
 [core]
     editor = vim
 [init]
     defaultBranch = main
+[log]
+    abbrevCommit = true
+    date = iso
+[column]
+    ui = auto
 [alias]
     st = status --short --branch
-    lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-    loog  = log --graph --all --pretty=format:'%C(red bold)%d%Creset %s %Cgreen(%cr) %Cblue<%an> %Cred%h'
+    lg = log --graph --all --pretty=format:'%C(red bold)%h%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset%C(yellow)%d%Creset'
+    sw = switch
+    aliases = !git config --list | grep alias
 [push]
-    default = simple
+    autoSetupRemote = true
 [diff]
-    algorithm = patience
+    algorithm = histogram
+    colorMoved = default
+    mnemonicPrefix = true
 [gpg]
     program = gpg
 [merge]
-    conflictstyle = diff3
+    conflictstyle = zdiff3
+[fetch]
+    prune = true
+    prunetags = true
 [filter "lfs"]
     clean = git-lfs clean -- %f
     smudge = git-lfs smudge -- %f
